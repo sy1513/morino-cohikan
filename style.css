@@ -7,10 +7,11 @@
 }
 
 h1{
+  margin-bottom: 20px;
   color:#C38F4E ;
   font-size: 30px;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 h1:before{
@@ -30,22 +31,31 @@ h1:before{
 
 h1,h2,li,p,footer {
   text-align: center;
-  
+  margin-top: 5px;
 }
 
 img{
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
-}
-
-img:nth-of-type(1) {
-  width: 50%;
-  box-shadow: 2px 1px 1px 1px #FFEC00;
-  padding-left: -10px;
+  margin: 10px;
 }
 
 img:nth-of-type(2){
   height: auto;
+  margin-top: -5%;
+}
+
+header p:nth-of-type(1) {
+  width: 50%;
+  margin-left: 10%;
+}
+
+body {
+text-align: center;
+}
+
+hr{
+  margin: 10%;
 }
 
 li{
