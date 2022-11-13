@@ -6,21 +6,52 @@
   font-family: "游ゴシック体", Yu gothic, "游ゴシック Medium", "Yu gothic medium" , sans-serif;
 }
 
+body {
+  text-align: center;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+main{
+  max-width: 70%;
+  margin:0 auto;
+}
+main p{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+header p:nth-of-type(1) {
+  width: 70%;
+  margin-left: 10px;
+}
+
+header p:nth-of-type(2){
+  height: auto;
+}
+
+/*大見出し*/
 h1{
   color:#C38F4E ;
   font-size: 30px;
   position: relative;
   text-align: center;
+  padding: 10px;
+  margin: 20px;
 }
 
+/* 大見出し　下線 */
 h1:before{
   position: absolute;
   display: inline-block;
   content: '';
-  bottom: -5px;
-  left: 50%;
-  width: 72px;
+  bottom: 1px;
+  left: 48%;
+  width: 30px;
   height: 1px;
+  margin: 10px;
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -28,33 +59,30 @@ h1:before{
   background-color: #FCA518;
 }
 
-h1,h2,li,p,footer {
+h2,nav,p,main a {
+  margin-top: 10px;
+  padding-bottom :10px;
+}
+
+h1,h2,li,p {
   text-align: center;
-  margin-top: 5px;
 }
-
-img{
-  max-width: 70%;
-  height: auto;
-  margin: 10px;
-}
-
-img:nth-of-type(2){
-  height: auto;
-  margin-top: -5%;
-}
-
-header p:nth-of-type(1) {
-  width: 50%;
-  margin-left: 10%;
-}
-
-body {
-text-align: center;
-}
-
+/* 最新情報の線 */
 hr{
   margin: 10%;
+}
+
+/* hamburger */
+@media(max-width:767px){
+header nav{
+  display: none;
+}
+}
+
+@media(min-width:768px) and (max-width:1200px){
+  header nav{
+    display: block;
+  }
 }
 
 li{
@@ -73,10 +101,15 @@ li a:hover {
   margin: auto;
 }
 iframe{
-  max-width: 70%;
+  width: 100%;
   height: auto;
-  
+  padding: 10px;
 }
-
-
+/* footer */
+.toggle{
+padding: 20px;  
+float: left;
+width: calc(50% - 10px);
+background-color: #4AB16F;
+}
 
