@@ -49,6 +49,7 @@ p h2{
    margin: 0 auto;
   }
 }
+
 /* header */
 
 .site-header{
@@ -61,12 +62,7 @@ p h2{
   margin-left : 10px;
 }
 
-.osusume{
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
-}
+
 
 .concept {
   width: auto;
@@ -83,7 +79,6 @@ p h2{
 }
 
 .main-nav{
-  display: block;
   left: 10px;
   width: 90%;
   display: none;
@@ -108,6 +103,56 @@ p h2{
   margin: 0 auto;
 }
 
+
+
+/* hamburger */
+.hamburger{
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+}
+.hamburger input[type="checkbox"]:checked ~ .main-nav{
+  display: block;
+  width: 100%;
+}
+/* hamburger icon  */
+
+.hamburger .hamburger__toggle{
+  display: none;
+}
+
+.hamburger .hamburger__toggle-label{
+  position: absolute;
+  display: block;
+  top: 5px;
+  right: 10px;
+}
+
+.hamburger_menu{
+  background-image: url(icon/3x/ハンバーガーメニュー.png);
+}
+
+@media(min-width:768px){
+.hamburger__toggle-label{
+  display: none;
+  }
+}
+
+@media(min-width:768px){
+  .hamburger, .main-nav{
+    position: absolute;
+    top: 20px;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    left: 25%;
+    flex: 1;
+  }
+}
+
 /* ヘッダー　タブレットサイズ */
 @media(min-width:768px){
   .site-logo {
@@ -125,7 +170,7 @@ p h2{
 
 @media(min-width:768px){
   .main-nav{
-    /* padding-top: 5px; */
+    padding-top: 5px;
     right: 5px;
     flex: 1;
   }
@@ -173,6 +218,26 @@ h1:before{
   background-color: #FCA518;
 }
 
+.osusume{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+table{
+  text-align: left;
+  
+}
+
+.set-menu{
+  text-align: center;
+}
+
+.menu-list{
+  text-align: center;
+}
+
 @media(min-width:768px){
   .h1_main{
     margin: 0;
@@ -202,48 +267,6 @@ hr{
 }
 
 
-/* hamburger */
-.hamburger{
-  position: absolute;
-  display: block;
-  top: 10px;
-  right: 10px;
-}
-.hamburger input[type="checkbox"]:checked ~ .main-nav{
-  display: block;
-  width: 100%;
-}
-/* hamburger icon  */
-
-.hamburger .hamburger__toggle{
-  display: none;
-}
-
-.hamburger .hamburger__toggle-label{
-  position: absolute;
-  display: block;
-  top: 5px;
-  right: 10px;
-}
-@media(min-width:768px){
-.hamburger__toggle-label{
-  display: none;
-  }
-}
-
-@media(min-width:768px){
-  .hamburger, .main-nav{
-    position: absolute;
-    top: 20px;
-    display: block;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    left: 25%;
-    flex: 1;
-  }
-}
 
 
 

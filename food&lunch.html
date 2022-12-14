@@ -9,6 +9,7 @@
     <title>フード＆ランチ</title>
   </head>
 <body>
+        <!-- header -->
    <header class="site-header">
       <p class="site-logo"><img src="img/logo.png" alt=""></p>
      <div class="container">
@@ -16,7 +17,7 @@
           <input type="checkbox" id="hamburger__toggle" class="hamburger__toggle">
           <label for="hamburger__toggle" class="hamburger__toggle-label">
             <span>
-             <span>メニューを開く</span>
+             <span class="hamburger_menu">メニューを開く</span>
             </span>
          </label>
         <ul class="main-nav">
@@ -31,81 +32,90 @@
         </ul>
       </nav>
     </div>  
+  </header>
+         <!-- main_visual -->
     <div class="container">
-      <h1>フード＆ランチ</h1>
-        <h2>季節のデザート</h2>
-        <h3>モンブラン</h3>
+      <section class="osusume">
+        <h1>フード＆ランチ</h1>
+          <h2>季節のデザート</h2>
+          <h3>モンブラン</h3>
             <p>硬めのクッキー生地に甘めのホイップクリーム<br>
                 甘さ控えめのマロンクリームをたっぷりかけ大粒の栗を上に乗せました。
             </p>
+            <p class="osusume"><img src="img/モンブラン.jpg" alt="モンブランの写真"></p>
+      </section>  
     </div>
-  </header>
+          <!-- main -->
   <div class="container">
-    <p class="osusume"><img src="img/モンブラン.jpg" alt="モンブランの写真"></p>
-<!-- morning_set -->
-    <h2>モーニングセット</h2>
-    <img src="img/モーニングセット.jpg" alt="モーニングセットの写真">
-  <p class="item">
-    モーニングセット<br>
-    6:00~11:00まで<br>
-    それぞれのパンにサラダ、タマゴがつきます。<br>
-    タマゴはゆで卵とスクランブルエッグが選べます。
-  </p>
+    <section class="set-menu">
+      <h2>モーニングセット</h2>
+        <img src="img/モーニングセット.jpg" alt="モーニングセットの写真">
+           <p class="item">
+               モーニングセット<br>
+               6:00~11:00まで<br>
+               それぞれのパンにサラダ、タマゴがつきます。<br>
+               タマゴはゆで卵とスクランブルエッグが選べます。
+            </p>
+               <table border="0" align="center">
+                 <tr>
+                  <tb valian="middle">
+                   <th>トーストセット</th>
+                   <td>¥450</td>
+                  </tb>
+                 </tr>
+                 <tr>
+                   <th>ミックスサンドセット</th>
+                   <td>¥450</td>
+                 </tr>
+                 <tr>
+                   <th>ホットドックセット</th>
+                   <td>¥450</td>
+                 </tr>
+               </table>
 
-  <p class="menu">
-    <table>
-      <tr>
-        <th>トーストセット</th>
-        <td>¥450</td>
-      </tr>
-      <tr>
-        <th>ミックスサンドセット</th>
-        <td>¥450</td>
-      </tr>
-      <tr>
-        <th>ホットドックセット</th>
-        <td>¥450</td>
-      </tr>
-    </table>
-  </p>
-      <p class="item">
-        選べるドリンク<br>
-       ブレンド、アメリカン、ダージリン、アールグレイ、オレンジジュース
-      </p>
+                 <p class="item">
+                     選べるドリンク<br>
+                      ブレンド、アメリカン、ダージリン、アールグレイ、オレンジジュース
+                 </p>
 
       <p class="side-menu"></p>
         モーニングサイドメニュー追加
-    <table>
-      <tr>
-       <th>ゆで卵</th>
-         <td>¥40 </td>
-      </tr>
-    <tr>
-     <th>スクランブルエッグ</th>
-        <td>¥40 </td>
-    </tr>
-    <tr>
-     <th>ジャム<br>
-        （苺、杏、無花果、ブルーバリー）
-        </th>
-        <td>¥20</td>
-    </tr>
-     <tr>
-      <th>サラダ</th>
-       <td>¥20 </td>
-    </tr>
-     <tr>
-      <th>メープルシロップ</th>
-        <td>¥20</td>
-     </tr>
-    </table>
+         <p class="menu">
+           <table>
+             <tr>
+                 <th>ゆで卵</th>
+                   <td>¥40 </td>
+              </tr>
+             <tr>
+               <th>スクランブルエッグ</th>
+                 <td>¥40 </td>
+              </tr>
+            <tr>
+              <th>ジャム<br>
+                （苺、杏、無花果、ブルーバリー）
+                </th>
+                  <td>¥20</td>
+             </tr>
+             <tr>
+              <th>サラダ</th>
+               <td>¥20 </td>
+             </tr>
+             <tr>
+              <th>メープルシロップ</th>
+                <td>¥20</td>
+              </tr>
+             </table>
+  </p>
+</section>
  <!-- menu_list -->
+ <section class="menu-list">
   <h2>メニュー</h2>
       <h3>すべてテイクアウトできます！</h3>
         <div class="menu">
        <h2>サンドイッチ</h2>
      <p><img src="img/サンドイッチ@2x.jpg" alt="サンドイッチ"></p>
         サンドイッチ
+    <p class="menu">
       <table>
         <tr>
           <th>BLTサンド</th>
@@ -124,10 +134,12 @@
           <td>¥600</td>
        </tr>
       </table>
-
+    </p>
+ 
       <h2>ライスメニュー</h2>
       <p><img src="img/カレー.jpg" alt="ビーフカレーの写真"></p>
          ビーフカレー
+  <p class="menu">
        <table>
          <tr>
            <th>ビーフカレー（サラダ付）</th>
@@ -142,7 +154,7 @@
           <td>¥800</td>
         </tr>
        </table>
-
+      </p>
        <h2>スパゲッティ</h2>
       <p><img src="img/カルボナーラ.jpg" alt="カルボナーラの写真"></p>
          カルボナーラ
@@ -199,7 +211,7 @@
        </tr>
        </table>
     </div>
-  
+  </section>
   <!-- lunch_menu -->
   <h2>ランチメニュー</h2>
     <p class="item">
